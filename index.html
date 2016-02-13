@@ -10,8 +10,31 @@
   </head>
   <body>
 
-    <h3>Hello World!</h3>
+    <h3>Draw a line</h3>
 
-    <script src="//d3js.org/d3.v3.min.js" charset="utf-8"></script>
+    <script src="https://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+
+    <script>
+
+      var svg = d3.select('body')
+            .append('svg')
+            .attr('width', 200)
+            .attr('height', 200);
+
+      // Draw a line
+      svg.append('circle')
+            .attr('cx', 100)
+            .attr('cy', 100)
+            .attr('r', 50);
+
+      // Draw a rectangle
+      svg.append('rect')
+            .attr('x', 0)
+            .attr('y', 0)
+            .attr('height', 100)
+            .attr('width', 100);
+
+    </script>
+
   </body>
 </html>
